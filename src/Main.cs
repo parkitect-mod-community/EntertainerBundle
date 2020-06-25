@@ -15,11 +15,10 @@
 */
 using System.Linq;
 
-namespace Template
+namespace EntertainerBundle
 {
     public class Main : AssetMod
     {
-
         public void onEnabled()
         {
 

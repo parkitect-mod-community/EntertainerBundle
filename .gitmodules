@@ -1,0 +1,3 @@
+[submodule "src/Parkitilities"]
+	path = src/Parkitilities
+	url = git@github.com:parkitect-mod-community/Parkitilities.git

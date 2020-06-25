@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEditor;
@@ -46,14 +46,25 @@ namespace ParkitectAssetEditor
                         prefabPaths.Add(CreatePrefab(asset.RearCar.GameObject, asset.RearCar.Guid));
                     }
                 }
+                else if (asset.Type == AssetType.Shop)
+                {
+                    foreach (var product in asset.Products)
+                    {
+                        prefabPaths.Add(CreatePrefab(product.Product, product.Guid));
+                    }
+                    prefabPaths.Add(CreatePrefab(asset.GameObject, asset.Guid));
+                }
                 else {
                     asset.LeadCar = null;
-                    asset.Car = null;
+                    if (asset.Type != AssetType.Car)
+                    {
+                        asset.Car = null;
+                    }
                     asset.RearCar = null;
                     prefabPaths.Add(CreatePrefab(asset.GameObject, asset.Guid));
                 }
             }
-            
+
             // use the prefab list to build an assetbundle
             AssetBundleBuild[] descriptor = {
                 new AssetBundleBuild()
@@ -63,8 +74,13 @@ namespace ParkitectAssetEditor
                 }
             };
 
+#if UNITY_STANDALONE_OSX
+            BuildPipeline.BuildAssetBundles(ProjectManager.Project.Value.ModDirectory, descriptor, BuildAssetBundleOptions.ForceRebuildAssetBundle | BuildAssetBundleOptions.DeterministicAssetBundle | BuildAssetBundleOptions.UncompressedAssetBundle | BuildAssetBundleOptions.StrictMode, BuildTarget.StandaloneOSX);
+#elif UNITY_STANDALONE_WIN
             BuildPipeline.BuildAssetBundles(ProjectManager.Project.Value.ModDirectory, descriptor, BuildAssetBundleOptions.ForceRebuildAssetBundle | BuildAssetBundleOptions.DeterministicAssetBundle | BuildAssetBundleOptions.UncompressedAssetBundle | BuildAssetBundleOptions.StrictMode, BuildTarget.StandaloneWindows);
-            
+#else
+            BuildPipeline.BuildAssetBundles(ProjectManager.Project.Value.ModDirectory, descriptor, BuildAssetBundleOptions.ForceRebuildAssetBundle | BuildAssetBundleOptions.DeterministicAssetBundle | BuildAssetBundleOptions.UncompressedAssetBundle | BuildAssetBundleOptions.StrictMode, BuildTarget.StandaloneLinux64);
+#endif
             return true;
         }
 
@@ -79,7 +95,7 @@ namespace ParkitectAssetEditor
 
             return path;
         }
-        
+
         /// <summary>
         /// Fills asset pack with gameobjects from the scene and/or prefabs.
         /// </summary>
@@ -97,7 +113,7 @@ namespace ParkitectAssetEditor
                     try // if one object fails to load, don't make it fail the rest
                     {
                         var go = Resources.Load<GameObject>(string.Format("AssetPack/{0}", asset.Guid));
-                        
+
                         asset.GameObject = Object.Instantiate(go);
                         asset.GameObject.name = asset.Name;
                     }
@@ -136,7 +152,7 @@ namespace ParkitectAssetEditor
                 try // if one object fails to load, don't make it fail the rest
                 {
                     var go = Resources.Load<GameObject>(string.Format("AssetPack/{0}", Guid));
-                    
+
                     return Object.Instantiate(go);
                 }
                 catch (System.Exception)
