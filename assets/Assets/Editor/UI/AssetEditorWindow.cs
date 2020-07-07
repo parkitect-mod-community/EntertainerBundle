@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -45,7 +45,6 @@ namespace ParkitectAssetEditor.UI
 			new WaypointRenderer(),
 			new BoundingBoxRenderer(),
 			new TrainRenderer(),
-            new CarRenderer(),
 		};
 
 		private static string[] trackedRideNames = new[]
@@ -326,10 +325,10 @@ namespace ParkitectAssetEditor.UI
 
 			GUILayout.Label(string.Format("{0} Settings", _selectedAsset.Name), "PreToolbar");
 
-			// Name, type and price settings
+            // Name, type and price settings
 			GUILayout.Label("General:", EditorStyles.boldLabel);
 			_selectedAsset.Name = EditorGUILayout.TextField("Name", _selectedAsset.Name);
-			_selectedAsset.Type = (AssetType)EditorGUILayout.Popup("Type", (int)_selectedAsset.Type, new[]
+			_selectedAsset.TargetType = (AssetType)EditorGUILayout.Popup("Type", (int)_selectedAsset.TargetType, new[]
 			{
 				AssetType.Deco.ToString(),
 				AssetType.Wall.ToString(),
@@ -343,12 +342,13 @@ namespace ParkitectAssetEditor.UI
 				AssetType.ImageSign.ToString(),
 				AssetType.Train.ToString(),
                 AssetType.Shop.ToString(),
-                AssetType.Car.ToString()
+                AssetType.Door.ToString(),
+                AssetType.Generic.ToString()
 			});
 			_selectedAsset.Price = EditorGUILayout.FloatField("Price:", _selectedAsset.Price);
+            _selectedAsset.LoadAsset = EditorGUILayout.Toggle("Load Asset: ", _selectedAsset.LoadAsset);
 
-
-            if (_selectedAsset.Type != AssetType.Shop)
+            if (_selectedAsset.TargetType != AssetType.Shop)
             {
                 GUILayout.Label("Color settings", EditorStyles.boldLabel);
                 _selectedAsset.HasCustomColors =
@@ -382,10 +382,13 @@ namespace ParkitectAssetEditor.UI
             }
 
             // Type specific settings
-            switch (_selectedAsset.Type)
+            switch (_selectedAsset.TargetType)
             {
                 case AssetType.Wall:
                     DrawAssetWallDetailSection();
+                    goto case AssetType.Deco;
+                case AssetType.Door:
+                    _selectedAsset.WallSettings = (int) WallBlock.Back;
                     goto case AssetType.Deco;
                 case AssetType.Deco:
                     DrawAssetDecoDetailSection();
@@ -423,11 +426,6 @@ namespace ParkitectAssetEditor.UI
                     DrawShopProductSection();
                     GUILayout.Space(15);
                     DrawBoundingBoxDetailSection();
-                    break;
-                case AssetType.Car:
-                    DrawCarSection();
-                    GUILayout.Space(15);
-                    DrawWaypointsDetailSection();
                     break;
             }
 
@@ -554,7 +552,7 @@ namespace ParkitectAssetEditor.UI
 			}
 		}
 
-		/// <summary>
+        /// <summary>
 		/// Draws the asset deco detail section.
 		/// </summary>
 		private void DrawAssetDecoDetailSection()
@@ -566,7 +564,7 @@ namespace ParkitectAssetEditor.UI
 
 			// Placement settings
 			GUILayout.Label("Placement settings", EditorStyles.boldLabel);
-			if (_selectedAsset.Type != AssetType.Wall)
+			if (_selectedAsset.TargetType != AssetType.Wall && _selectedAsset.TargetType != AssetType.Door)
 			{
 				_selectedAsset.BuildOnGrid = EditorGUILayout.Toggle("Force build on grid: ", _selectedAsset.BuildOnGrid);
 				_selectedAsset.SnapCenter = EditorGUILayout.Toggle("Snaps to center: ", _selectedAsset.SnapCenter);
@@ -754,7 +752,7 @@ namespace ParkitectAssetEditor.UI
 		}
 
 
-		/// <summary>
+        /// <summary>
 		/// Draws the asset deco detail section.
 		/// </summary>
 		private void DrawAssetWallDetailSection()
