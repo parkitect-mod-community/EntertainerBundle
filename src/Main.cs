@@ -15,9 +15,14 @@
 */
 
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using Parkitilities;
+using TMPro;
 using UnityEngine;
+using UnityEngine.TextCore;
+using UnityEngine.TextCore.LowLevel;
 using Object = UnityEngine.Object;
 
 namespace EntertainerBundle
@@ -68,20 +73,27 @@ namespace EntertainerBundle
             EmployeeCostume raptorCostume = entertainers.costumes.First(k => k.name == "EntertainerCostumeRaptor");
             var bodyPartsContainer = raptorCostume.bodyPartsMale;
 
+            SpriteRenderer pandaSprite = AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "c08cc832b55af5f638a6f8c64f6258fb")
+                .GetComponent<SpriteRenderer>();
             Parkitility.CostumeBuilder()
                 .Id("EntertainerPanda-cc65c162")
                 .DisplayName("Panda")
+                .GuestThoughtAboutCostume("Oh Look its a Panda")
+                .CostumeSprite("panda", Object.Instantiate(pandaSprite.sprite),50,50)
                 .BodyPartMale(
                     Parkitility.CreateBodyPart()
                         .AddTorso(_remap(bodyPartsContainer.getTorso(0),
                             AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "38c9bccac03f19b6caa53a4c4f656334")))
-                        .AddHairstyle(_remapHead(AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "595f9e3b779740751893aa986ff5ad87")))
+                        .AddHairstyle(_remapHead(AssetPackUtilities.LoadAsset<GameObject>(_assetBundle,
+                            "595f9e3b779740751893aa986ff5ad87")))
                         .Build(_assetManagerLoader))
                 .MeshAnimations(raptorCostume.meshAnimations)
                 .AnimatorController(raptorCostume.animatorController)
                 .Register(_assetManagerLoader, entertainers);
-            _assetBundle.Unload(false);
 
+
+
+            _assetBundle.Unload(false);
         }
 
         public override void onDisabled()

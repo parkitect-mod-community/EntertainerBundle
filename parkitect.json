@@ -2,7 +2,7 @@
     "name": "PMC.EntertainerBundle",
     "folder": "PMCEntertainerBundle",
     "version": "v0.0.0",
-    "workshop": "",
+    "workshop": "1321453322",
     "author": "Michael Pollind",
     "description": null,
     "preview": "./preview.png",
@@ -15,7 +15,9 @@
         "UnityEngine.CoreModule",
         "Parkitect",
         "UnityEngine.PhysicsModule",
-        "UnityEngine.AnimationModule"
+        "UnityEngine.AnimationModule",
+        "Unity.TextMeshPro",
+        "UnityEngine.TextCoreModule"
     ],
     "additionalAssemblies": [
         "Newtonsoft.Json"
