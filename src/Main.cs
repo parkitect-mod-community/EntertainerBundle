@@ -78,7 +78,7 @@ namespace EntertainerBundle
             Parkitility.CostumeBuilder()
                 .Id("EntertainerPanda-cc65c162")
                 .DisplayName("Panda")
-                .GuestThoughtAboutCostume("Oh Look its a Panda")
+                .GuestThoughtAboutCostume("What a cute fluffy Panda!")
                 .CostumeSprite("panda", Object.Instantiate(pandaSprite.sprite),50,50)
                 .BodyPartMale(
                     Parkitility.CreateBodyPart()
@@ -86,6 +86,24 @@ namespace EntertainerBundle
                             AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "38c9bccac03f19b6caa53a4c4f656334")))
                         .AddHairstyle(_remapHead(AssetPackUtilities.LoadAsset<GameObject>(_assetBundle,
                             "595f9e3b779740751893aa986ff5ad87")))
+                        .Build(_assetManagerLoader))
+                .MeshAnimations(raptorCostume.meshAnimations)
+                .AnimatorController(raptorCostume.animatorController)
+                .Register(_assetManagerLoader, entertainers);
+
+            SpriteRenderer tigerSprite = AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "8d3a87427a6819f9e9c457c3feef4a56")
+                .GetComponent<SpriteRenderer>();
+            Parkitility.CostumeBuilder()
+                .Id("EntertainerTiger-cc65c162")
+                .DisplayName("Tiger")
+                .GuestThoughtAboutCostume("What a fluffy Tiger!")
+                .CostumeSprite("tiger", Object.Instantiate(tigerSprite.sprite),50,50)
+                .BodyPartMale(
+                    Parkitility.CreateBodyPart()
+                        .AddTorso(_remap(bodyPartsContainer.getTorso(0),
+                            AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "21d83d7233511714f875e57875992cee")))
+                        .AddHairstyle(_remapHead(AssetPackUtilities.LoadAsset<GameObject>(_assetBundle,
+                            "20bc030acb52b1cb09ada2ed8131cef0")))
                         .Build(_assetManagerLoader))
                 .MeshAnimations(raptorCostume.meshAnimations)
                 .AnimatorController(raptorCostume.animatorController)
