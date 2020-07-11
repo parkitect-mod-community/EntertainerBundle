@@ -78,7 +78,7 @@ namespace EntertainerBundle
             Parkitility.CostumeBuilder()
                 .Id("EntertainerPanda-cc65c162")
                 .DisplayName("Panda")
-                .GuestThoughtAboutCostume("What a cute fluffy Panda!")
+                .GuestThoughtAboutCostume("What a cute Panda!")
                 .CostumeSprite("panda", Object.Instantiate(pandaSprite.sprite),50,50)
                 .BodyPartMale(
                     Parkitility.CreateBodyPart()
@@ -110,6 +110,23 @@ namespace EntertainerBundle
                 .Register(_assetManagerLoader, entertainers);
 
 
+            SpriteRenderer kiwiSprite = AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "75709b8ccf2c15f3d8ab256f59007800")
+                .GetComponent<SpriteRenderer>();
+            Parkitility.CostumeBuilder()
+                .Id("EntertainerKiwi-cc65c162")
+                .DisplayName("Kiwi")
+                .GuestThoughtAboutCostume("What a strange Bird!")
+                .CostumeSprite("kiwi", Object.Instantiate(kiwiSprite.sprite),50,50)
+                .BodyPartMale(
+                    Parkitility.CreateBodyPart()
+                        .AddTorso(_remap(bodyPartsContainer.getTorso(0),
+                            AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "929ba34d2f0bbd52c99ae3d6097ef25c")))
+                        .AddHairstyle(_remapHead(AssetPackUtilities.LoadAsset<GameObject>(_assetBundle,
+                            "d6c340003b853f1b29c1012dd6d2baae")))
+                        .Build(_assetManagerLoader))
+                .MeshAnimations(raptorCostume.meshAnimations)
+                .AnimatorController(raptorCostume.animatorController)
+                .Register(_assetManagerLoader, entertainers);
 
             _assetBundle.Unload(false);
         }

@@ -50,7 +50,7 @@ namespace ParkitectAssetEditor
         /// The archive setting. If true, assets should be archived with the mod to be uploaded to the workshop.
         /// </value>
         public bool ArchiveAssets { get; set; }
-        
+
         /// <summary>
         /// Adds the specified game object as an asset.
         /// </summary>
@@ -103,7 +103,7 @@ namespace ParkitectAssetEditor
 
             LayOutAssets();
         }
-        
+
         /// <summary>
         /// Removes the specified asset.
         /// </summary>
@@ -151,6 +151,7 @@ namespace ParkitectAssetEditor
         /// </summary>
         public void LayOutAssets()
         {
+            return;
             var gridSize = Mathf.FloorToInt(Mathf.Log(Assets.Count)) + 1;
             const int margin = 5;
 

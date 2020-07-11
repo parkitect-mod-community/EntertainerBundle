@@ -1,0 +1,480 @@
+fileFormatVersion: 2
+guid: 0f968597d6e1367fda67fd93f32872ba
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: body
+    100004: body.001
+    100006: crateAttachment
+    100008: //RootNode
+    100010: L_handAttachment
+    100012: lAnkleJ
+    100014: lClavicleJ
+    100016: lElbowJ
+    100018: lHipJ
+    100020: lKneeJ
+    100022: lMiddle1J
+    100024: lMiddle2J
+    100026: lMiddleTipJ
+    100028: lMiddleTipJ_end
+    100030: lShoulderJ
+    100032: lThumb2J
+    100034: lThumbTipJ
+    100036: lThumbTipJ_end
+    100038: lToeJ
+    100040: lToeJ_end
+    100042: lWristJ
+    100044: polySurface10
+    100046: R_handAttachment
+    100048: rAnkleJ
+    100050: rClavicleJ
+    100052: rElbowJ
+    100054: rHipJ
+    100056: rKneeJ
+    100058: rMiddle1J
+    100060: rMiddle2J
+    100062: rMiddleTipJ
+    100064: rMiddleTipJ_end
+    100066: ROOTJ
+    100068: rShoulderJ
+    100070: rThumb2J
+    100072: rThumbTipJ
+    100074: rThumbTipJ_end
+    100076: rToeJ
+    100078: rToeJ_end
+    100080: rWristJ
+    100082: Spine01J
+    100084: Spine02J
+    100086: Spine03J
+    100088: tail1J
+    100090: tail2J
+    100092: tailEndJ
+    100094: tailEndJ_end
+    400000: Armature
+    400002: body
+    400004: body.001
+    400006: crateAttachment
+    400008: //RootNode
+    400010: L_handAttachment
+    400012: lAnkleJ
+    400014: lClavicleJ
+    400016: lElbowJ
+    400018: lHipJ
+    400020: lKneeJ
+    400022: lMiddle1J
+    400024: lMiddle2J
+    400026: lMiddleTipJ
+    400028: lMiddleTipJ_end
+    400030: lShoulderJ
+    400032: lThumb2J
+    400034: lThumbTipJ
+    400036: lThumbTipJ_end
+    400038: lToeJ
+    400040: lToeJ_end
+    400042: lWristJ
+    400044: polySurface10
+    400046: R_handAttachment
+    400048: rAnkleJ
+    400050: rClavicleJ
+    400052: rElbowJ
+    400054: rHipJ
+    400056: rKneeJ
+    400058: rMiddle1J
+    400060: rMiddle2J
+    400062: rMiddleTipJ
+    400064: rMiddleTipJ_end
+    400066: ROOTJ
+    400068: rShoulderJ
+    400070: rThumb2J
+    400072: rThumbTipJ
+    400074: rThumbTipJ_end
+    400076: rToeJ
+    400078: rToeJ_end
+    400080: rWristJ
+    400082: Spine01J
+    400084: Spine02J
+    400086: Spine03J
+    400088: tail1J
+    400090: tail2J
+    400092: tailEndJ
+    400094: tailEndJ_end
+    2100000: peep_happyco_mat.004
+    2300000: polySurface10
+    3300000: polySurface10
+    4300000: polySurface10
+    4300002: body
+    4300004: body.001
+    7400000: Armature|Armature|Take 001|BaseLayer.003
+    7400002: Armature|crateAttachment.001|Take 001|BaseLayer
+    7400004: Armature|crateAttachment|Take 001|BaseLayer
+    7400006: Armature|crateAttachment|Take 001|BaseLayer.001
+    7400008: Armature|crateAttachment|Take 001|BaseLayer.002
+    7400010: Armature|crateAttachment|Take 001|BaseLayer.003
+    7400012: 'Armature|L_handAttachment.001|L_handAttachment|crateAttachment.001|Take '
+    7400014: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take .000
+    7400016: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take .001
+    7400018: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take .002
+    7400020: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take .003
+    7400022: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take .004
+    7400024: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take 001|
+    7400026: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment.001|Take
+    7400028: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take
+      001
+    7400030: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.000
+    7400032: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.001
+    7400034: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.002
+    7400036: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.003
+    7400038: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.004
+    7400040: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment.001|Take
+    7400042: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take
+      001
+    7400044: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.000
+    7400046: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.001
+    7400048: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.002
+    7400050: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.003
+    7400052: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.004
+    7400054: Armature|L_handAttachment.001|Take 001|BaseLayer
+    7400056: Armature|L_handAttachment|Take 001|BaseLayer
+    7400058: Armature|L_handAttachment|Take 001|BaseLayer.001
+    7400060: Armature|L_handAttachment|Take 001|BaseLayer.002
+    7400062: Armature|L_handAttachment|Take 001|BaseLayer.003
+    7400064: 'Armature|R_handAttachment.001|R_handAttachment|crateAttachment.001|Take '
+    7400066: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take .000
+    7400068: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take .001
+    7400070: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take .002
+    7400072: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take .003
+    7400074: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take .004
+    7400076: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take 001|
+    7400078: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment.001|Take
+    7400080: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take
+      001
+    7400082: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.000
+    7400084: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.001
+    7400086: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.002
+    7400088: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.003
+    7400090: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.004
+    7400092: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment.001|Take
+    7400094: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take
+      001
+    7400096: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.000
+    7400098: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.001
+    7400100: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.002
+    7400102: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.003
+    7400104: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.004
+    7400106: Armature|R_handAttachment.001|Take 001|BaseLayer
+    7400108: Armature|R_handAttachment|Take 001|BaseLayer
+    7400110: Armature|R_handAttachment|Take 001|BaseLayer.001
+    7400112: Armature|R_handAttachment|Take 001|BaseLayer.002
+    7400114: Armature|R_handAttachment|Take 001|BaseLayer.003
+    7400116: R_handAttachment|Armature|Take 001|BaseLayer.003
+    7400118: R_handAttachment|crateAttachment.001|Take 001|BaseLayer
+    7400120: R_handAttachment|crateAttachment|Take 001|BaseLayer
+    7400122: R_handAttachment|crateAttachment|Take 001|BaseLayer.001
+    7400124: R_handAttachment|crateAttachment|Take 001|BaseLayer.002
+    7400126: R_handAttachment|crateAttachment|Take 001|BaseLayer.003
+    7400128: 'R_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment.001|Take '
+    7400130: R_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .000
+    7400132: R_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .001
+    7400134: R_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .002
+    7400136: R_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .003
+    7400138: R_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .004
+    7400140: R_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      001|
+    7400142: R_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment.001|Take
+    7400144: R_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take
+      001
+    7400146: R_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.000
+    7400148: R_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.001
+    7400150: R_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.002
+    7400152: R_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.003
+    7400154: R_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.004
+    7400156: R_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment.001|Take
+    7400158: R_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take
+      001
+    7400160: R_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.000
+    7400162: R_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.001
+    7400164: R_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.002
+    7400166: R_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.003
+    7400168: R_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.004
+    7400170: R_handAttachment|L_handAttachment.001|Take 001|BaseLayer
+    7400172: R_handAttachment|L_handAttachment|Take 001|BaseLayer
+    7400174: R_handAttachment|L_handAttachment|Take 001|BaseLayer.001
+    7400176: R_handAttachment|L_handAttachment|Take 001|BaseLayer.002
+    7400178: R_handAttachment|L_handAttachment|Take 001|BaseLayer.003
+    7400180: 'R_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment.001|Take '
+    7400182: R_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .000
+    7400184: R_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .001
+    7400186: R_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .002
+    7400188: R_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .003
+    7400190: R_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .004
+    7400192: R_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      001|
+    7400194: R_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment.001|Take
+    7400196: R_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take
+      001
+    7400198: R_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.000
+    7400200: R_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.001
+    7400202: R_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.002
+    7400204: R_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.003
+    7400206: R_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.004
+    7400208: R_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment.001|Take
+    7400210: R_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take
+      001
+    7400212: R_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.000
+    7400214: R_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.001
+    7400216: R_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.002
+    7400218: R_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.003
+    7400220: R_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.004
+    7400222: R_handAttachment|R_handAttachment.001|Take 001|BaseLayer
+    7400224: R_handAttachment|R_handAttachment|Take 001|BaseLayer
+    7400226: R_handAttachment|R_handAttachment|Take 001|BaseLayer.001
+    7400228: R_handAttachment|R_handAttachment|Take 001|BaseLayer.002
+    7400230: R_handAttachment|R_handAttachment|Take 001|BaseLayer.003
+    7400232: L_handAttachment|Armature|Take 001|BaseLayer.003
+    7400234: L_handAttachment|crateAttachment.001|Take 001|BaseLayer
+    7400236: L_handAttachment|crateAttachment|Take 001|BaseLayer
+    7400238: L_handAttachment|crateAttachment|Take 001|BaseLayer.001
+    7400240: L_handAttachment|crateAttachment|Take 001|BaseLayer.002
+    7400242: L_handAttachment|crateAttachment|Take 001|BaseLayer.003
+    7400244: 'L_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment.001|Take '
+    7400246: L_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .000
+    7400248: L_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .001
+    7400250: L_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .002
+    7400252: L_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .003
+    7400254: L_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .004
+    7400256: L_handAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      001|
+    7400258: L_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment.001|Take
+    7400260: L_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take
+      001
+    7400262: L_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.000
+    7400264: L_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.001
+    7400266: L_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.002
+    7400268: L_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.003
+    7400270: L_handAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.004
+    7400272: L_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment.001|Take
+    7400274: L_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take
+      001
+    7400276: L_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.000
+    7400278: L_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.001
+    7400280: L_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.002
+    7400282: L_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.003
+    7400284: L_handAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.004
+    7400286: L_handAttachment|L_handAttachment.001|Take 001|BaseLayer
+    7400288: L_handAttachment|L_handAttachment|Take 001|BaseLayer
+    7400290: L_handAttachment|L_handAttachment|Take 001|BaseLayer.001
+    7400292: L_handAttachment|L_handAttachment|Take 001|BaseLayer.002
+    7400294: L_handAttachment|L_handAttachment|Take 001|BaseLayer.003
+    7400296: 'L_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment.001|Take '
+    7400298: L_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .000
+    7400300: L_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .001
+    7400302: L_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .002
+    7400304: L_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .003
+    7400306: L_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .004
+    7400308: L_handAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      001|
+    7400310: L_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment.001|Take
+    7400312: L_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take
+      001
+    7400314: L_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.000
+    7400316: L_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.001
+    7400318: L_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.002
+    7400320: L_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.003
+    7400322: L_handAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.004
+    7400324: L_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment.001|Take
+    7400326: L_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take
+      001
+    7400328: L_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.000
+    7400330: L_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.001
+    7400332: L_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.002
+    7400334: L_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.003
+    7400336: L_handAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.004
+    7400338: L_handAttachment|R_handAttachment.001|Take 001|BaseLayer
+    7400340: L_handAttachment|R_handAttachment|Take 001|BaseLayer
+    7400342: L_handAttachment|R_handAttachment|Take 001|BaseLayer.001
+    7400344: L_handAttachment|R_handAttachment|Take 001|BaseLayer.002
+    7400346: L_handAttachment|R_handAttachment|Take 001|BaseLayer.003
+    7400348: crateAttachment|Armature|Take 001|BaseLayer.003
+    7400350: crateAttachment|crateAttachment.001|Take 001|BaseLayer
+    7400352: crateAttachment|crateAttachment|Take 001|BaseLayer
+    7400354: crateAttachment|crateAttachment|Take 001|BaseLayer.001
+    7400356: crateAttachment|crateAttachment|Take 001|BaseLayer.002
+    7400358: crateAttachment|crateAttachment|Take 001|BaseLayer.003
+    7400360: 'crateAttachment|L_handAttachment.001|L_handAttachment|crateAttachment.001|Take '
+    7400362: crateAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .000
+    7400364: crateAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .001
+    7400366: crateAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .002
+    7400368: crateAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .003
+    7400370: crateAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      .004
+    7400372: crateAttachment|L_handAttachment.001|L_handAttachment|crateAttachment|Take
+      001|
+    7400374: crateAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment.001|Take
+    7400376: crateAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take
+      001
+    7400378: crateAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.000
+    7400380: crateAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.001
+    7400382: crateAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.002
+    7400384: crateAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.003
+    7400386: crateAttachment|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.004
+    7400388: crateAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment.001|Take
+    7400390: crateAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take
+      001
+    7400392: crateAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.000
+    7400394: crateAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.001
+    7400396: crateAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.002
+    7400398: crateAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.003
+    7400400: crateAttachment|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.004
+    7400402: crateAttachment|L_handAttachment.001|Take 001|BaseLayer
+    7400404: crateAttachment|L_handAttachment|Take 001|BaseLayer
+    7400406: crateAttachment|L_handAttachment|Take 001|BaseLayer.001
+    7400408: crateAttachment|L_handAttachment|Take 001|BaseLayer.002
+    7400410: crateAttachment|L_handAttachment|Take 001|BaseLayer.003
+    7400412: 'crateAttachment|R_handAttachment.001|R_handAttachment|crateAttachment.001|Take '
+    7400414: crateAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .000
+    7400416: crateAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .001
+    7400418: crateAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .002
+    7400420: crateAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .003
+    7400422: crateAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      .004
+    7400424: crateAttachment|R_handAttachment.001|R_handAttachment|crateAttachment|Take
+      001|
+    7400426: crateAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment.001|Take
+    7400428: crateAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take
+      001
+    7400430: crateAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.000
+    7400432: crateAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.001
+    7400434: crateAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.002
+    7400436: crateAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.003
+    7400438: crateAttachment|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.004
+    7400440: crateAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment.001|Take
+    7400442: crateAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take
+      001
+    7400444: crateAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.000
+    7400446: crateAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.001
+    7400448: crateAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.002
+    7400450: crateAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.003
+    7400452: crateAttachment|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.004
+    7400454: crateAttachment|R_handAttachment.001|Take 001|BaseLayer
+    7400456: crateAttachment|R_handAttachment|Take 001|BaseLayer
+    7400458: crateAttachment|R_handAttachment|Take 001|BaseLayer.001
+    7400460: crateAttachment|R_handAttachment|Take 001|BaseLayer.002
+    7400462: crateAttachment|R_handAttachment|Take 001|BaseLayer.003
+    9500000: //RootNode
+    13700000: body
+    13700002: body.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
