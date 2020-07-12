@@ -38,7 +38,19 @@ namespace EntertainerBundle
             AssetPackUtilities.RemapSkinnedMesh(go, from);
             foreach (Renderer componentsInChild in go.GetComponentsInChildren<Renderer>())
             {
-                Parkitility.ReplaceWithParkitectMaterial(componentsInChild);
+                Material[] materials = componentsInChild.sharedMaterials;
+                for (int i = 0; i < materials.Length; i++)
+                {
+                    if (materials[i] != null)
+                    {
+                        Material material2 = new Material(Shader.Find("Standard (Specular setup)"));
+                        material2.CopyPropertiesFromMaterial(materials[i]);
+                        material2.enableInstancing = true;
+                        materials[i] = material2;
+                    }
+                }
+
+                // Parkitility.ReplaceWithParkitectMaterial(componentsInChild);
             }
 
             _assetManagerLoader.HideGo(go);
@@ -50,7 +62,18 @@ namespace EntertainerBundle
             GameObject go = Object.Instantiate(target);
             foreach (Renderer componentsInChild in go.GetComponentsInChildren<Renderer>())
             {
-                Parkitility.ReplaceWithParkitectMaterial(componentsInChild);
+                Material[] materials = componentsInChild.sharedMaterials;
+                for (int i = 0; i < materials.Length; i++)
+                {
+                    if (materials[i] != null)
+                    {
+                        Material material2 = new Material(Shader.Find("Standard (Specular setup)"));
+                        material2.CopyPropertiesFromMaterial(materials[i]);
+                        material2.enableInstancing = true;
+                        materials[i] = material2;
+                    }
+                }
+                // Parkitility.ReplaceWithParkitectMaterial(componentsInChild);
             }
             _assetManagerLoader.HideGo(go);
             return go;
