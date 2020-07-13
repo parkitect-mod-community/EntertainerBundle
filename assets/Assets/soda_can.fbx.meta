@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 7d36998d11d84a9d588d86e167335d1c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: lAnkleJ
+    100004: lClavicleJ
+    100006: lElbowJ
+    100008: lHipJ
+    100010: lKneeJ
+    100012: lMiddle1J
+    100014: lMiddle2J
+    100016: lMiddleTipJ
+    100018: lMiddleTipJ_end
+    100020: lShoulderJ
+    100022: lThumb2J
+    100024: lThumbTipJ
+    100026: lThumbTipJ_end
+    100028: lToeJ
+    100030: lToeJ_end
+    100032: lWristJ
+    100034: metal_bits
+    100036: rAnkleJ
+    100038: rClavicleJ
+    100040: rElbowJ
+    100042: rHipJ
+    100044: rKneeJ
+    100046: rMiddle1J
+    100048: rMiddle2J
+    100050: rMiddleTipJ
+    100052: rMiddleTipJ_end
+    100054: ROOTJ
+    100056: rShoulderJ
+    100058: rThumb2J
+    100060: rThumbTipJ
+    100062: rThumbTipJ_end
+    100064: rToeJ
+    100066: rToeJ_end
+    100068: rWristJ
+    100070: //RootNode
+    100072: Spine01J
+    100074: Spine02J
+    100076: Spine03J
+    100078: tail1J
+    100080: tail2J
+    100082: tailEndJ
+    100084: tailEndJ_end
+    400000: Armature
+    400002: lAnkleJ
+    400004: lClavicleJ
+    400006: lElbowJ
+    400008: lHipJ
+    400010: lKneeJ
+    400012: lMiddle1J
+    400014: lMiddle2J
+    400016: lMiddleTipJ
+    400018: lMiddleTipJ_end
+    400020: lShoulderJ
+    400022: lThumb2J
+    400024: lThumbTipJ
+    400026: lThumbTipJ_end
+    400028: lToeJ
+    400030: lToeJ_end
+    400032: lWristJ
+    400034: metal_bits
+    400036: rAnkleJ
+    400038: rClavicleJ
+    400040: rElbowJ
+    400042: rHipJ
+    400044: rKneeJ
+    400046: rMiddle1J
+    400048: rMiddle2J
+    400050: rMiddleTipJ
+    400052: rMiddleTipJ_end
+    400054: ROOTJ
+    400056: rShoulderJ
+    400058: rThumb2J
+    400060: rThumbTipJ
+    400062: rThumbTipJ_end
+    400064: rToeJ
+    400066: rToeJ_end
+    400068: rWristJ
+    400070: //RootNode
+    400072: Spine01J
+    400074: Spine02J
+    400076: Spine03J
+    400078: tail1J
+    400080: tail2J
+    400082: tailEndJ
+    400084: tailEndJ_end
+    2100000: texture
+    4300000: metal_bits
+    7400000: Armature|Armature|Take 001|BaseLayer.003
+    7400002: Armature|crateAttachment.001|Take 001|BaseLayer
+    7400004: Armature|crateAttachment|Take 001|BaseLayer
+    7400006: Armature|crateAttachment|Take 001|BaseLayer.001
+    7400008: Armature|crateAttachment|Take 001|BaseLayer.002
+    7400010: Armature|crateAttachment|Take 001|BaseLayer.003
+    7400012: 'Armature|L_handAttachment.001|L_handAttachment|crateAttachment.001|Take '
+    7400014: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take .000
+    7400016: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take .001
+    7400018: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take .002
+    7400020: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take .003
+    7400022: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take .004
+    7400024: Armature|L_handAttachment.001|L_handAttachment|crateAttachment|Take 001|
+    7400026: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment.001|Take
+    7400028: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take
+      001
+    7400030: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.000
+    7400032: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.001
+    7400034: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.002
+    7400036: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.003
+    7400038: Armature|L_handAttachment.001|L_handAttachment|L_handAttachment|Take.004
+    7400040: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment.001|Take
+    7400042: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take
+      001
+    7400044: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.000
+    7400046: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.001
+    7400048: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.002
+    7400050: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.003
+    7400052: Armature|L_handAttachment.001|L_handAttachment|R_handAttachment|Take.004
+    7400054: Armature|L_handAttachment.001|Take 001|BaseLayer
+    7400056: Armature|L_handAttachment|Take 001|BaseLayer
+    7400058: Armature|L_handAttachment|Take 001|BaseLayer.001
+    7400060: Armature|L_handAttachment|Take 001|BaseLayer.002
+    7400062: Armature|L_handAttachment|Take 001|BaseLayer.003
+    7400064: 'Armature|R_handAttachment.001|R_handAttachment|crateAttachment.001|Take '
+    7400066: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take .000
+    7400068: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take .001
+    7400070: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take .002
+    7400072: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take .003
+    7400074: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take .004
+    7400076: Armature|R_handAttachment.001|R_handAttachment|crateAttachment|Take 001|
+    7400078: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment.001|Take
+    7400080: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take
+      001
+    7400082: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.000
+    7400084: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.001
+    7400086: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.002
+    7400088: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.003
+    7400090: Armature|R_handAttachment.001|R_handAttachment|L_handAttachment|Take.004
+    7400092: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment.001|Take
+    7400094: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take
+      001
+    7400096: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.000
+    7400098: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.001
+    7400100: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.002
+    7400102: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.003
+    7400104: Armature|R_handAttachment.001|R_handAttachment|R_handAttachment|Take.004
+    7400106: Armature|R_handAttachment.001|Take 001|BaseLayer
+    7400108: Armature|R_handAttachment|Take 001|BaseLayer
+    7400110: Armature|R_handAttachment|Take 001|BaseLayer.001
+    7400112: Armature|R_handAttachment|Take 001|BaseLayer.002
+    7400114: Armature|R_handAttachment|Take 001|BaseLayer.003
+    9500000: //RootNode
+    13700000: metal_bits
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

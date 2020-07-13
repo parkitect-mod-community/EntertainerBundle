@@ -31,26 +31,24 @@ namespace EntertainerBundle
     {
         private AssetManagerLoader _assetManagerLoader = new AssetManagerLoader();
         private AssetBundle _assetBundle;
+        private Material _entertainerMaterial;
+
+        private Material _ProxyGuestOutfit(Material m)
+        {
+            Material targetMaterial = Object.Instantiate(_entertainerMaterial);
+            targetMaterial.CopyPropertiesFromMaterial(m);
+            targetMaterial.name = "CustomColorsPeepOutfits";
+            return targetMaterial;
+        }
 
         private GameObject _remap(GameObject target, GameObject from)
         {
+
             GameObject go = Object.Instantiate(target);
             AssetPackUtilities.RemapSkinnedMesh(go, from);
             foreach (Renderer componentsInChild in go.GetComponentsInChildren<Renderer>())
             {
-                Material[] materials = componentsInChild.sharedMaterials;
-                for (int i = 0; i < materials.Length; i++)
-                {
-                    if (materials[i] != null)
-                    {
-                        Material material2 = new Material(Shader.Find("Standard (Specular setup)"));
-                        material2.CopyPropertiesFromMaterial(materials[i]);
-                        material2.enableInstancing = true;
-                        materials[i] = material2;
-                    }
-                }
-
-                // Parkitility.ReplaceWithParkitectMaterial(componentsInChild);
+                componentsInChild.sharedMaterial = _ProxyGuestOutfit(componentsInChild.sharedMaterial);
             }
 
             _assetManagerLoader.HideGo(go);
@@ -62,19 +60,9 @@ namespace EntertainerBundle
             GameObject go = Object.Instantiate(target);
             foreach (Renderer componentsInChild in go.GetComponentsInChildren<Renderer>())
             {
-                Material[] materials = componentsInChild.sharedMaterials;
-                for (int i = 0; i < materials.Length; i++)
-                {
-                    if (materials[i] != null)
-                    {
-                        Material material2 = new Material(Shader.Find("Standard (Specular setup)"));
-                        material2.CopyPropertiesFromMaterial(materials[i]);
-                        material2.enableInstancing = true;
-                        materials[i] = material2;
-                    }
-                }
-                // Parkitility.ReplaceWithParkitectMaterial(componentsInChild);
+                componentsInChild.sharedMaterial = _ProxyGuestOutfit(componentsInChild.sharedMaterial);
             }
+
             _assetManagerLoader.HideGo(go);
             return go;
         }
@@ -95,14 +83,18 @@ namespace EntertainerBundle
 
             EmployeeCostume raptorCostume = entertainers.costumes.First(k => k.name == "EntertainerCostumeRaptor");
             var bodyPartsContainer = raptorCostume.bodyPartsMale;
+            _entertainerMaterial = bodyPartsContainer.getTorso(0).GetComponentInChildren<Renderer>().sharedMaterial;
+            Debug.Log(_entertainerMaterial.name);
 
-            SpriteRenderer pandaSprite = AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "c08cc832b55af5f638a6f8c64f6258fb")
+
+            SpriteRenderer pandaSprite = AssetPackUtilities
+                .LoadAsset<GameObject>(_assetBundle, "c08cc832b55af5f638a6f8c64f6258fb")
                 .GetComponent<SpriteRenderer>();
             Parkitility.CostumeBuilder()
                 .Id("EntertainerPanda-cc65c162")
                 .DisplayName("Panda")
                 .GuestThoughtAboutCostume("What a cute Panda!")
-                .CostumeSprite("panda", Object.Instantiate(pandaSprite.sprite),50,50)
+                .CostumeSprite("panda", Object.Instantiate(pandaSprite.sprite), 50, 50)
                 .BodyPartMale(
                     Parkitility.CreateBodyPart()
                         .AddTorso(_remap(bodyPartsContainer.getTorso(0),
@@ -114,13 +106,14 @@ namespace EntertainerBundle
                 .AnimatorController(raptorCostume.animatorController)
                 .Register(_assetManagerLoader, entertainers);
 
-            SpriteRenderer tigerSprite = AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "8d3a87427a6819f9e9c457c3feef4a56")
+            SpriteRenderer tigerSprite = AssetPackUtilities
+                .LoadAsset<GameObject>(_assetBundle, "8d3a87427a6819f9e9c457c3feef4a56")
                 .GetComponent<SpriteRenderer>();
             Parkitility.CostumeBuilder()
                 .Id("EntertainerTiger-cc65c162")
                 .DisplayName("Tiger")
                 .GuestThoughtAboutCostume("What a fluffy Tiger!")
-                .CostumeSprite("tiger", Object.Instantiate(tigerSprite.sprite),50,50)
+                .CostumeSprite("tiger", Object.Instantiate(tigerSprite.sprite), 50, 50)
                 .BodyPartMale(
                     Parkitility.CreateBodyPart()
                         .AddTorso(_remap(bodyPartsContainer.getTorso(0),
@@ -133,19 +126,39 @@ namespace EntertainerBundle
                 .Register(_assetManagerLoader, entertainers);
 
 
-            SpriteRenderer kiwiSprite = AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "75709b8ccf2c15f3d8ab256f59007800")
+            SpriteRenderer kiwiSprite = AssetPackUtilities
+                .LoadAsset<GameObject>(_assetBundle, "75709b8ccf2c15f3d8ab256f59007800")
                 .GetComponent<SpriteRenderer>();
             Parkitility.CostumeBuilder()
                 .Id("EntertainerKiwi-cc65c162")
                 .DisplayName("Kiwi")
                 .GuestThoughtAboutCostume("What a strange Bird!")
-                .CostumeSprite("kiwi", Object.Instantiate(kiwiSprite.sprite),50,50)
+                .CostumeSprite("kiwi", Object.Instantiate(kiwiSprite.sprite), 50, 50)
                 .BodyPartMale(
                     Parkitility.CreateBodyPart()
                         .AddTorso(_remap(bodyPartsContainer.getTorso(0),
                             AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "929ba34d2f0bbd52c99ae3d6097ef25c")))
                         .AddHairstyle(_remapHead(AssetPackUtilities.LoadAsset<GameObject>(_assetBundle,
                             "d6c340003b853f1b29c1012dd6d2baae")))
+                        .Build(_assetManagerLoader))
+                .MeshAnimations(raptorCostume.meshAnimations)
+                .AnimatorController(raptorCostume.animatorController)
+                .Register(_assetManagerLoader, entertainers);
+
+
+            SpriteRenderer sodaCanSprite = AssetPackUtilities
+                .LoadAsset<GameObject>(_assetBundle, "aa9f7adbf9716911691e4fef5506081f")
+                .GetComponent<SpriteRenderer>();
+            Parkitility.CostumeBuilder()
+                .Id("EntertainerSoda-cc65c162")
+                .DisplayName("Soda Can")
+                .CustomColor(new Color(0.92156862f,0.250980f,0.1843f))
+                .GuestThoughtAboutCostume("Hmmm, Soda!")
+                .CostumeSprite("soda", Object.Instantiate(sodaCanSprite.sprite), 50, 50)
+                .BodyPartMale(
+                    Parkitility.CreateBodyPart()
+                        .AddTorso(_remap(bodyPartsContainer.getTorso(0),
+                            AssetPackUtilities.LoadAsset<GameObject>(_assetBundle, "0bb60bc4c6af4b0ee9717f2e2ae012ae")))
                         .Build(_assetManagerLoader))
                 .MeshAnimations(raptorCostume.meshAnimations)
                 .AnimatorController(raptorCostume.animatorController)
