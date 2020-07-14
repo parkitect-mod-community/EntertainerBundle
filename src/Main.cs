@@ -36,7 +36,8 @@ namespace EntertainerBundle
         private Material _ProxyGuestOutfit(Material m)
         {
             Material targetMaterial = Object.Instantiate(_entertainerMaterial);
-            targetMaterial.CopyPropertiesFromMaterial(m);
+            targetMaterial.SetTexture("_MainTex", m.GetTexture("_MainTex"));
+            targetMaterial.SetTexture("_MaskTex", m.GetTexture("_MaskTex"));
             targetMaterial.name = "CustomColorsPeepOutfits";
             return targetMaterial;
         }
