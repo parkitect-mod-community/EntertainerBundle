@@ -85,8 +85,6 @@ namespace EntertainerBundle
             EmployeeCostume raptorCostume = entertainers.costumes.First(k => k.name == "EntertainerCostumeRaptor");
             var bodyPartsContainer = raptorCostume.bodyPartsMale;
             _entertainerMaterial = bodyPartsContainer.getTorso(0).GetComponentInChildren<Renderer>().sharedMaterial;
-            Debug.Log(_entertainerMaterial.name);
-
 
             SpriteRenderer pandaSprite = AssetPackUtilities
                 .LoadAsset<GameObject>(_assetBundle, "c08cc832b55af5f638a6f8c64f6258fb")
