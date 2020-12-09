@@ -70,18 +70,15 @@ namespace EntertainerBundle
 
         public override void onEnabled()
         {
-
             if (GameController.Instance != null && GameController.Instance.isCampaignScenario)
                 return;
 
-            Debug.Log(System.IO.Path.Combine(Parkitility.CurrentModDirectory(), "assetpack"));
             _assetBundle =
                 AssetBundle.LoadFromFile(System.IO.Path.Combine(Parkitility.CurrentModDirectory(), "assetpack"));
             if (_assetBundle == null)
                 throw new Exception("Failed to load AssetBundle!");
 
             var entertainers = AssetManager.Instance.getPrefab<Entertainer>(Prefabs.Entertainer);
-
             EmployeeCostume raptorCostume = entertainers.costumes.First(k => k.name == "EntertainerCostumeRaptor");
             var bodyPartsContainer = raptorCostume.bodyPartsMale;
             _entertainerMaterial = bodyPartsContainer.getTorso(0).GetComponentInChildren<Renderer>().sharedMaterial;
